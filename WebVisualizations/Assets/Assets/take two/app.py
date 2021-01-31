@@ -7,7 +7,7 @@ app = Flask(__name__)
 # create route that renders index.html template
 @app.route("/")
 def home():
-    return render_template("menudraft.html")
+    return render_template("index.html")
 
 @app.route("/data")
 def data():
@@ -19,20 +19,19 @@ def comparisons():
 
 @app.route("/cloudiness")
 def cloudiness():
-    return render_template("cloudiness.html")
+    return render_template("./DataPages/cloudiness.html")
 
 @app.route("/humidity")
 def humidity():
-    return render_template("humidity.html")
+    return render_template("./DataPages/humidity.html")
 
 @app.route("/temp")
 def temp():
-    return render_template("temp.html")
+    return render_template("./DataPages/temp.html")
 
 @app.route("/windspeed")
 def windspeed():
-    return render_template("windspeed.html")
-
+    return render_template("./DataPages/windspeed.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
