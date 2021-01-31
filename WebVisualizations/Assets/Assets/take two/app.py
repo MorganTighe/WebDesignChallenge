@@ -7,7 +7,7 @@ app = Flask(__name__)
 # create route that renders index.html template
 @app.route("/")
 def home():
-    return render_template("index.html")
+    return render_template("menudraft.html")
 
 @app.route("/data")
 def data():
