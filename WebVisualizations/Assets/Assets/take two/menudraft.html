@@ -57,7 +57,7 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="data.html">Comparisons</a>
+                    <a class="nav-link" href="comparisons.html">Comparisons</a>
                 </li>
             </ul>
         </div>
@@ -65,8 +65,9 @@
     <div class="container">
         <div class="jumbotron">
           <h1 class="display-4">Weather Near the Equator</h1>
-          <p class="lead font-weight-normal">The purpose of this project was to understand the relationship between weather and the distance from the equator. In order to examine that, I have created multiple visualizations for your consideration.</p>
-          <a class="btn btn-outline-secondary" href="/data">See the Data</a>
+          <p class="lead font-weight-normal">The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset of over 500 cities.</p>
+          <p class="lead font-weight-normal">After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+          <a class="btn btn-outline-secondary" href="data.html">See the Data</a>
         </div>
       </div>
 
@@ -75,7 +76,7 @@
           <div class="row">
               <div class="col-md-3">
                 <div class="thumbnail">
-                  <img src="./Assets/Fig1.png" alt="..." class="img-thumbnail">
+                    <a href="DataPages/temp.html"><img src="./Assets/Fig1.png" alt="..." class="img-thumbnail"></a>
                 </div>
                 <div class="caption">
                     <h3>City Latitude vs. Max Temperature</h3>
@@ -83,7 +84,7 @@
               </div>
               <div class="col-md-3">
                   <div class="thumbnail">
-                    <img src="./Assets/Fig2.png" alt="..." class="img-thumbnail">
+                    <a href="DataPages/humidity.html"><img src="./Assets/Fig2.png" alt="..." class="img-thumbnail"></a>
                   </div>
                 <div class="caption">
                     <h3>City Latitude vs. Humidity</h>
@@ -91,7 +92,7 @@
               </div>
               <div class="col-md-3">
                   <div class="thumbnail">
-                    <a href="DataPages/cloudiness.html"></a><img src="./Assets/Fig3.png" alt="..." class="img-thumbnail"></a>
+                    <a href="DataPages/cloudiness.html"><img src="./Assets/Fig3.png" alt="..." class="img-thumbnail"></a>
                   </div>
                   <div class="caption">
                       <h3>City Latitude vs. Cloudiness</h3>

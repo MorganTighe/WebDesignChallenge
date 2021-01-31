@@ -1,23 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="">
-    <meta name="author" content="Morgan Tighe">
-    <title>Weather and the Equator</title>
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/product/">
-
-    <!-- Bootstrap core CSS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-     
-
-
+    <!doctype html>
+    <html lang="en">
+    
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="Weather Comparison" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+            integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    
+        <title>Weather Comparison by City</title>
+        <style>
+            .container {
+                outline: solid 1px blue;
+            }
+    
+            .col-md-6 {
+                outline: solid 1px red;
+            }
+    
+            .special {
+                background-color: pink !important;
+            }
+    
+        </style>
+    </head>
+    
+    <body>
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light special">
+            <a class="navbar-brand" href="#">Equator Effect on <b>Weather</b></b></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="data.html">Data</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Data Visualizations
+                          </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="./DataPages/temp.html">City Latitude vs. Max Temperature</a>
+                                <a class="dropdown-item" href="./DataPages/humidity.html">City Latitude vs. Humidity</a>
+                                <a class="dropdown-item" href="./DataPages/cloudiness.html">City Latitude vs. Cloudiness</a>
+                                <a class="dropdown-item" href="./DataPages/windspeed.html">City Latitude vs. Wind Speed</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comparisons.html">Comparisons</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     
 <div class="container">
     <div class="table-responsive">
